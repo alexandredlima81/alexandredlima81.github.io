@@ -13,4 +13,3 @@ AWS_EC2_METADATA_DISABLED: true
 steps:
 - name: Describe AWS EC2 instances
 run: aws ec2 describe-instances
-
