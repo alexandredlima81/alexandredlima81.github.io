@@ -19,6 +19,14 @@ header {
     margin: 0 auto;
 }
 
+/* Estilos do header para alinhar o conteúdo */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -42,8 +50,8 @@ nav ul li a:hover {
 
 /* Estilos para o seletor de idioma com bandeiras */
 .language-selector {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
     margin-left: 20px;
 }
 
@@ -116,6 +124,10 @@ footer p {
         padding: 0 20px;
     }
     
+    .header-content {
+        flex-direction: column;
+    }
+
     nav ul li {
         display: block;
         margin: 10px 0;
