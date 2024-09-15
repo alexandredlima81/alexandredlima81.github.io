@@ -45,15 +45,25 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    color: #ffcc00; /* Cor de destaque ao passar o mouse */
+}
+
 .language-selector {
     display: flex;
+    align-items: center; /* Centraliza as bandeiras verticalmente */
 }
 
 .language-selector .flag {
-    width: 20px;
-    height: 18px;
+    width: 24px; /* Aumenta o tamanho da bandeira */
+    height: 24px;
     cursor: pointer;
-    margin-left: 0.5rem;
+    margin-left: 0.75rem; /* Aumenta o espaçamento entre as bandeiras */
+    transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+.language-selector .flag:hover {
+    transform: scale(1.2); /* Aumenta ligeiramente a bandeira ao passar o mouse */
 }
 
 .section {
