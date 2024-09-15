@@ -43,7 +43,7 @@ function changeLanguage(lang) {
     document.getElementById('nav-projects').textContent = translations[lang].navProjects;
     document.getElementById('nav-contact').textContent = translations[lang].navContact;
     document.getElementById('about-title').textContent = translations[lang].aboutTitle;
-    document.getElementById('about-description').textContent = translations[lang].aboutDescription;
+    document.getElementById('about-description').innerHTML = translations[lang].aboutDescription;
     document.getElementById('projects-title').textContent = translations[lang].projectsTitle;
     document.getElementById('project1-title').textContent = translations[lang].project1Title;
     document.getElementById('project1-description').textContent = translations[lang].project1Description;
