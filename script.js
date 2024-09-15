@@ -23,7 +23,13 @@ const translations = {
         navProjects: "Projetos",
         navContact: "Contato",
         aboutTitle: "Sobre Mim",
-        aboutDescription: "Profissional atuante na área de Operação em Tecnologia da Informação e Comunicação. Com foco em gestão e sustentação, a pessoas, processos e soluções tecnológicas relacionadas a Infraestrutura de ambientes (On Premise / Cloud). Tendo como objetivo, dar continuidade à ascensão no desenvolvimento profissional e pessoal.",
+        aboutDescription: `Olá, pessoal!<br><br>
+            Meu nome é Alexandre, profissional da Tecnologia da Informação e Comunicação que está em busca constante de desafios para evoluir em conhecimento! 🚀<br><br>
+            Quem sou eu? Bem, atuando desde sempre na área de Infraestrutura.<br><br>
+            Nos últimos anos, mergulhei de cabeça em tecnologias da AWS "❤️" e práticas DevOps, em busca de me tornar mais um Jedi da Tecnologia 😅, tanto no mundo On-Premise, Datacenters quanto em Cloud Pública ☁️.<br><br>
+            O que faço? Estou sempre navegando entre processos, pessoas e soluções tecnológicas, com a missão de garantir que cada solução esteja em sintonia com os objetivos e necessidades das organizações onde atuo.<br><br>
+            Meu objetivo? Continuar a trilhar o caminho do desenvolvimento profissional e pessoal, buscando novas aventuras tecnológicas e oportunidades para crescer, desenvolver e colaborar cada vez mais 💡.<br><br>
+            E como parte desta caminhada, venho através desta página aqui no Github.io, compartilhar tópicos relacionados às nossas necessidades do dia a dia, aceitando sugestões e ajuda para que juntos possamos fortalecer a comunidade do conhecimento compartilhado.`,
         projectsTitle: "Meus Projetos",
         project1Title: "Projeto 1",
         project1Description: "Descrição do projeto 1.",
