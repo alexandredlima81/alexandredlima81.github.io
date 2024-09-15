@@ -37,10 +37,8 @@ const translations = {
     }
 };
 
-function changeLanguage() {
-    const language = document.getElementById('language').value;
+function changeLanguage(language) {
     const elements = document.querySelectorAll('[id]');
-
     elements.forEach(el => {
         const translationKey = el.id;
         if (translations[language][translationKey]) {
