@@ -55,4 +55,15 @@ function changeLanguage(lang) {
     document.getElementById('nav-projects').textContent = translations[lang].navProjects;
     document.getElementById('nav-contact').textContent = translations[lang].navContact;
     document.getElementById('about-title').textContent = translations[lang].aboutTitle;
-    document
+    document.getElementById('about-description').innerHTML = translations[lang].aboutDescription;
+    document.getElementById('projects-title').textContent = translations[lang].projectsTitle;
+    document.getElementById('project1-title').textContent = translations[lang].project1Title;
+    document.getElementById('project1-description').textContent = translations[lang].project1Description;
+    document.getElementById('project2-title').textContent = translations[lang].project2Title;
+    document.getElementById('project2-description').textContent = translations[lang].project2Description;
+    document.getElementById('project3-title').textContent = translations[lang].project3Title;
+    document.getElementById('project3-description').textContent = translations[lang].project3Description;
+    document.getElementById('contact-title').textContent = translations[lang].contactTitle;
+    document.getElementById('contact-description').innerHTML = translations[lang].contactDescription;
+    document.getElementById('footer-text').textContent = translations[lang].footerText;
+}
