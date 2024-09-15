@@ -5,51 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Minha Página no GitHub</title>
+    <link rel="stylesheet" href="style.css">
     <!-- Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Bem-vindo à Minha Página</h1>
+            <h1 id="page-title">Bem-vindo à Minha Página</h1>
             <nav>
                 <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/alexandrefariaslima/" target="_blank">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                    </li>
+                    <li><a href="#sobre" id="nav-about">Sobre</a></li>
+                    <li><a href="#projetos" id="nav-projects">Projetos</a></li>
+                    <li><a href="#contato" id="nav-contact">Contato</a></li>
+                    <li><a href="https://www.linkedin.com/in/alexandrefariaslima/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
                 </ul>
             </nav>
+            <div class="language-selector">
+                <label for="language">Idioma:</label>
+                <select id="language" onchange="changeLanguage()">
+                    <option value="pt">Português</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
         </div>
     </header>
 
     <section id="sobre" class="section">
         <div class="container">
-            <h2>Sobre Mim</h2>
-            <p>Olá! Sou um desenvolvedor apaixonado por tecnologia e programação. Aqui você encontrará alguns dos meus projetos e formas de entrar em contato.</p>
+            <h2 id="about-title">Sobre Mim</h2>
+            <p id="about-description">Olá! Sou um desenvolvedor apaixonado por tecnologia e programação. Aqui você encontrará alguns dos meus projetos e formas de entrar em contato.</p>
         </div>
     </section>
 
     <section id="projetos" class="section">
         <div class="container">
-            <h2>Meus Projetos</h2>
+            <h2 id="projects-title">Meus Projetos</h2>
             <div class="projetos-grid">
                 <div class="projeto-item">
-                    <h3>Projeto 1</h3>
-                    <p>Descrição do projeto 1.</p>
+                    <h3 id="project1-title">Projeto 1</h3>
+                    <p id="project1-description">Descrição do projeto 1.</p>
                 </div>
                 <div class="projeto-item">
-                    <h3>Projeto 2</h3>
-                    <p>Descrição do projeto 2.</p>
+                    <h3 id="project2-title">Projeto 2</h3>
+                    <p id="project2-description">Descrição do projeto 2.</p>
                 </div>
                 <div class="projeto-item">
-                    <h3>Projeto 3</h3>
-                    <p>Descrição do projeto 3.</p>
+                    <h3 id="project3-title">Projeto 3</h3>
+                    <p id="project3-description">Descrição do projeto 3.</p>
                 </div>
             </div>
         </div>
@@ -57,15 +60,17 @@
 
     <section id="contato" class="section">
         <div class="container">
-            <h2>Contato</h2>
-            <p>Entre em contato através do <a href="mailto:alexandredlima81@gmail.com">meu email</a>.</p>
+            <h2 id="contact-title">Contato</h2>
+            <p id="contact-description">Entre em contato através do <a href="mailto:seuemail@exemplo.com">meu email</a>.</p>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Minha Página no GitHub</p>
+            <p>&copy; 2024 <span id="footer-text">Minha Página no GitHub</span></p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
