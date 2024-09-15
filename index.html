@@ -1,63 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem-vindo amigos Githubianos</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title data-translate="pageTitle">GitHub.io</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1 id="page-title">Bem-vindo amigos Githubianos</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre" id="nav-about">Sobre</a></li>
-                <li><a href="#projetos" id="nav-projects">Projetos</a></li>
-                <li><a href="#contato" id="nav-contact">Contato</a></li>
-            </ul>
-        </nav>
-        <div>
-            <button onclick="changeLanguage('en')">English</button>
-            <button onclick="changeLanguage('pt')">Português</button>
+        <div class="container header-content">
+            <div class="header-title">
+                <img src="images/home3.png" alt="Logo" class="header-logo">
+                <h1 id="page-title" data-translate="pageTitle">Bem-vindo amigos Githubianos</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#sobre" id="nav-about" data-translate="navAbout">Sobre</a></li>
+                    <li><a href="#projetos" id="nav-projects" data-translate="navProjects">Projetos</a></li>
+                    <li><a href="#contato" id="nav-contact" data-translate="navContact">Contato</a></li>
+                    <li><a href="https://www.linkedin.com/in/alexandrefariaslima/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </nav>
+            <!-- Seleção de idioma por bandeiras -->
+            <div class="language-selector">
+                <img src="images/brasil.png" alt="Português" class="flag" onclick="changeLanguage('pt')">
+                <img src="images/usa.png" alt="English" class="flag" onclick="changeLanguage('en')">
+            </div>
         </div>
     </header>
 
-    <main>
-        <section id="sobre" class="section">
-            <h2 id="about-title">Sobre Mim</h2>
-            <p id="about-description">
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2 id="about-title" data-translate="aboutTitle">Sobre mim.</h2>
+            <p id="about-description" data-translate="aboutDescription">
                 Olá, pessoal!<br><br>
-                Meu nome é Alexandre, profissional da Tecnologia da Informação e Comunicação...
+                Meu nome é Alexandre, profissional da Tecnologia da Informação e Comunicação que está em busca constante de desafios para evoluir em conhecimento! 🚀<br><br>
+                Quem sou eu? Bem, atuando desde sempre na área de Infraestrutura. <br><br>
+                Nos últimos anos, mergulhei de cabeça em tecnologias da AWS "❤️" e práticas DevOps, em busca de me tornar mais um Jedi da Tecnologia 😅, tanto no mundo On-Premise, Datacenters quanto em Cloud Pública ☁️.<br><br>
+                O que faço? Estou sempre navegando entre processos, pessoas e soluções tecnológicas, com a missão de garantir que cada solução esteja em sintonia com os objetivos e necessidades das organizações onde atuo.<br><br>
+                Meu objetivo? Continuar a trilhar o caminho do desenvolvimento profissional e pessoal, buscando novas aventuras tecnológicas e oportunidades para crescer, desenvolver e colaborar cada vez mais 💡.<br><br>
+                E como parte desta caminhada, venho através desta página aqui no Github.io, compartilhar tópicos relacionados às nossas necessidades do dia a dia, aceitando sugestões e ajuda para que juntos possamos fortalecer a comunidade do conhecimento compartilhado.
             </p>
-        </section>
+        </div>
+    </section>
 
-        <section id="projetos" class="section">
-            <h2 id="projects-title">Meus Projetos</h2>
+    <section id="projetos" class="section">
+        <div class="container">
+            <h2 id="projects-title" data-translate="projectsTitle">Meus Projetos</h2>
+            <div class="projetos-grid">
+                <div class="projeto-item">
+                    <h3 id="project1-title" data-translate="project1Title">Projeto 1</h3>
+                    <p id="project1-description" data-translate="project1Description">Descrição do projeto 1.</p>
+                </div>
+                <div class="projeto-item">
+                    <h3 id="project2-title" data-translate="project2Title">Projeto 2</h3>
+                    <p id="project2-description" data-translate="project2Description">Descrição do projeto 2.</p>
+                </div>
+                <div class="projeto-item">
+                    <h3 id="project3-title" data-translate="project3Title">Projeto 3</h3>
+                    <p id="project3-description" data-translate="project3Description">Descrição do projeto 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <article>
-                <h3 id="project1-title">Projeto 1</h3>
-                <p id="project1-description">Descrição do projeto 1.</p>
-            </article>
-
-            <article>
-                <h3 id="project2-title">Projeto 2</h3>
-                <p id="project2-description">Descrição do projeto 2.</p>
-            </article>
-
-            <article>
-                <h3 id="project3-title">Projeto 3</h3>
-                <p id="project3-description">Descrição do projeto 3.</p>
-            </article>
-        </section>
-
-        <section id="contato" class="section">
-            <h2 id="contact-title">Contato</h2>
-            <p id="contact-description">Entre em contato através do <a href="mailto:seuemail@exemplo.com">meu email</a>.</p>
-        </section>
-    </main>
+    <section id="contato" class="section">
+        <div class="container">
+            <img src="images/home1.png" alt="Logo" class="header-logo">
+            <h2 id="contact-title" data-translate="contactTitle">Contato</h2>
+            <p id="contact-description" data-translate="contactDescription">Entre em contato através do <a href="mailto:seuemail@exemplo.com">meu email</a>.</p>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 <span id="footer-text">Minha Página no GitHub</span></p>
+        <div class="container">
+            <p>&copy; 2024 <span id="footer-text" data-translate="footerText">Minha Página no GitHub</span></p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
