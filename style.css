@@ -18,6 +18,17 @@ header {
     align-items: center;
 }
 
+.header-title {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 50px; /* Ajuste conforme necessário */
+    height: auto;
+    margin-right: 1rem;
+}
+
 nav ul {
     list-style: none;
     margin: 0;
