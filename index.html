@@ -3,53 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Projetos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
-        }
-        .project {
-            margin: 20px;
-            display: inline-block;
-        }
-        .project img {
-            width: 200px;
-            height: 150px;
-            object-fit: cover;
-        }
-        .project a {
-            text-decoration: none;
-            color: #333;
-        }
-        .project a:hover {
-            color: #007BFF;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Minha Página no GitHub</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Meus Projetos</h1>
+    <header>
+        <div class="container">
+            <h1>Bem-vindo à Minha Página</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <div class="project">
-        <a href="https://link-para-seu-projeto1.com">
-            <img src="https://via.placeholder.com/200x150" alt="Projeto 1">
-            <p>Projeto 1</p>
-        </a>
-    </div>
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou um desenvolvedor apaixonado por tecnologia e programação. Aqui você encontrará alguns dos meus projetos e formas de entrar em contato.</p>
+        </div>
+    </section>
 
-    <div class="project">
-        <a href="https://link-para-seu-projeto2.com">
-            <img src="https://via.placeholder.com/200x150" alt="Projeto 2">
-            <p>Projeto 2</p>
-        </a>
-    </div>
+    <section id="projetos" class="section">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="projetos-grid">
+                <div class="projeto-item">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição do projeto 1.</p>
+                </div>
+                <div class="projeto-item">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição do projeto 2.</p>
+                </div>
+                <div class="projeto-item">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição do projeto 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="project">
-        <a href="https://link-para-seu-projeto3.com">
-            <img src="https://via.placeholder.com/200x150" alt="Projeto 3">
-            <p>Projeto 3</p>
-        </a>
-    </div>
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato através do <a href="mailto:seuemail@exemplo.com">meu email</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Minha Página no GitHub</p>
+        </div>
+    </footer>
 </body>
 </html>
