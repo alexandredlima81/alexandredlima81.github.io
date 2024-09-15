@@ -52,6 +52,10 @@ nav ul li a:hover {
     color: #0e76a8; /* cor do LinkedIn */
 }
 
+.language-selector {
+    margin-top: 10px;
+}
+
 .section {
     padding: 20px 0;
     margin: 20px 0;
