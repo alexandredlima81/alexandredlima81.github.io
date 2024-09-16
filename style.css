@@ -67,9 +67,14 @@ nav ul li a {
     padding: 0 1rem;
 }
 
-.projetos-grid {
+/*.projetos-grid {
     display: flex;
     gap: 1rem;
+}*/
+.projetos-grid {
+    display: flex;
+    flex-direction: column; /* Empilha os itens verticalmente */
+    gap: 16px; /* Espaçamento entre os itens */
 }
 
 .projeto-item {
