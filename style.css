@@ -99,7 +99,7 @@ footer p {
     border-radius: 50%; /* Torna a imagem redonda */
     object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
     /*border: 3px solid #fff; */
-    position: absolute;
+    position: relative;
     top: 20px;
     right: 60px;
 }
