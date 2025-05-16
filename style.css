@@ -24,7 +24,7 @@ header {
 }
 
 .header-logo {
-    width: 50px; /* Ajuste conforme necessário */
+    width: 50px;
     height: auto;
     margin-right: 1rem;
 }
@@ -65,16 +65,13 @@ nav ul li a {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+    position: relative; /* Adicionado para posicionamento relativo */
 }
 
-/*.projetos-grid {
-    display: flex;
-    gap: 1rem;
-}*/
 .projetos-grid {
     display: flex;
-    flex-direction: column; /* Empilha os itens verticalmente */
-    gap: 16px; /* Espaçamento entre os itens */
+    flex-direction: column;
+    gap: 16px;
 }
 
 .projeto-item {
@@ -93,4 +90,35 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Novos estilos adicionados para a seção "Sobre" */
+.about-content {
+    display: block; /* Alterado para block para melhor fluxo */
+    position: relative;
+    padding-top: 160px; /* Espaço para a imagem no topo */
+}
+
+.about-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .about-content {
+        padding-top: 0;
+    }
+    
+    .about-image {
+        position: static;
+        display: block;
+        margin: 0 auto 20px;
+    }
 }
