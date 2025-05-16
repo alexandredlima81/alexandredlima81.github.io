@@ -59,13 +59,13 @@ nav ul li a {
 .section {
     padding: 2rem 1rem;
     background-color: #f4f4f4;
+    position: relative; /* Adicionado para referência */
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
-    position: relative; /* Adicionado para posicionamento relativo */
 }
 
 .projetos-grid {
@@ -92,33 +92,23 @@ footer p {
     margin: 0;
 }
 
-/* Novos estilos adicionados para a seção "Sobre" */
-.about-content {
-    display: block; /* Alterado para block para melhor fluxo */
-    position: relative;
-    padding-top: 160px; /* Espaço para a imagem no topo */
-}
-
+/* === ESTILOS NOVOS PARA A IMAGEM REDONDA === */
 .about-image {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+    border-radius: 50%; /* Torna a imagem redonda */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
     border: 3px solid #333;
     position: absolute;
     top: 20px;
     right: 20px;
 }
 
-/* Responsividade para telas menores */
+/* Ajuste para telas pequenas */
 @media (max-width: 768px) {
-    .about-content {
-        padding-top: 0;
-    }
-    
     .about-image {
         position: static;
         display: block;
-        margin: 0 auto 20px;
+        margin: 0 auto 20px; /* Centraliza a imagem */
     }
 }
