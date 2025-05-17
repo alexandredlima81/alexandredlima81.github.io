@@ -100,7 +100,7 @@ footer p {
     object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
     /*border: 3px solid #fff; */
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 20px;
 }
 
