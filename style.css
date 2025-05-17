@@ -92,16 +92,25 @@ footer p {
     margin: 0;
 }
 
-/* === ESTILOS NOVOS PARA A IMAGEM REDONDA === */
+/* === ESTILOS NOVOS PARA A IMAGEM REDONDA === 
 .about-image {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Torna a imagem redonda */
+    border-radius: 50%; /* Torna a imagem redonda 
     object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
-    /*border: 3px solid #fff; */
+    /*border: 3px solid #fff; 
     position: absolute;
     top: 30px;
     right: 20px;
+}*/
+.about-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: left; /* Imagem à esquerda */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+    margin-top: 20px; /* Espaço acima da imagem */
 }
 
 /* Ajuste para telas pequenas */
