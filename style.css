@@ -106,11 +106,11 @@ footer p {
 .about-image {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+   /* border-radius: 50%; */
     object-fit: cover;
     float: left; /* Imagem à esquerda */
     margin-right: 20px; /* Espaço entre a imagem e o texto */
-    margin-top: 20px; /* Espaço acima da imagem */
+    margin-top: 40px; /* Espaço acima da imagem */
 }
 
 /* Ajuste para telas pequenas */
