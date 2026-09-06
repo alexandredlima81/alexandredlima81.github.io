@@ -11,10 +11,8 @@
         "project1Description": "Este caso de uso configura o Amazon Route 53 para garantir alta disponibilidade de serviços, utilizando health checks e políticas de roteamento para gerenciar failover entre múltiplos IPs associados a registros do tipo A. A estratégia envolve monitorar a saúde dos IPs e redirecionar o tráfego automaticamente para um IP secundário em caso de falha do IP primário, garantindo continuidade e resiliência para aplicações críticas.",
         "project2Title": "EC2 - Restaurando o Serviço SSH via User Data",
         "project2Description": "Em situações onde uma instância EC2 sofre uma interrupção regional e é reiniciada automaticamente pela AWS, podem ocorrer falhas na inicialização de serviços críticos, como o SSH. Para contornar esse problema, o recurso User Data pode ser utilizado para garantir que o serviço SSH seja restaurado corretamente durante o boot da instância. Ao incluir um script de inicialização no User Data, como service ssh start, é possível assegurar que o acesso via SSH seja reestabelecido após reinicializações forçadas, mantendo a instância acessível.",
-        "project3Title": "Projeto 3",
-        "project3Description": "Descrição do projeto 3.",
         "contactTitle": "Contato",
-        "contactDescription": "Entre em contato através do <a href=\"mailto:seuemail@exemplo.com\">meu email</a>.",
+        "contactDescription": "Entre em contato através do <a href=\"mailto:alexandredlima81@gmail.com\">meu email</a>.",
         "footerText": "Minha Página no GitHub"
     },
     "en": {
@@ -29,10 +27,8 @@
         "project1Description": "This use case configures Amazon Route 53 to ensure high availability of services, using health checks and routing policies to manage failover between multiple IPs associated with type A records. The strategy involves monitoring the health of the IPs and automatically redirecting traffic to an IP secondary in case of failure of the primary IP, ensuring continuity and resilience for critical applications.",
         "project2Title": "EC2 - Restoring SSH Service via User Data",
         "project2Description": "In situations where an EC2 instance experiences a regional outage and is automatically restarted by AWS, critical services such as SSH may fail to start. To work around this issue, User Data can be used to ensure that SSH service is restored correctly during instance boot. By including a startup script in User Data, such as service ssh start, you can ensure that SSH access is reestablished after forced reboots, keeping the instance accessible.",
-        "project3Title": "Project 3",
-        "project3Description": "Description of project 3.",
         "contactTitle": "Contact",
-        "contactDescription": "Get in touch via <a href=\"mailto:your.email@example.com\">my email</a>.",
+        "contactDescription": "Get in touch via <a href=\"mailto:alexandredlima81@gmail.com\">my email</a>.",
         "footerText": "My GitHub Page"
     }
 }
