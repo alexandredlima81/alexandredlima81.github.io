@@ -18,11 +18,7 @@ function applyTranslations(translations, lang) {
             }
         }
     });
-}
-
-function detectLanguage() {
-    const userLang = navigator.language || navigator.userLanguage;
-    return userLang.startsWith('pt') ? 'pt' : 'en';
+    document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
 }
 
 function changeLanguage(lang) {
@@ -32,6 +28,5 @@ function changeLanguage(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const lang = detectLanguage();
-    changeLanguage(lang);
+    changeLanguage('pt');
 });
