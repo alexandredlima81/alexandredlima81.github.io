@@ -49,11 +49,23 @@ nav ul li a {
     display: flex;
 }
 
+.language-selector button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    line-height: 0;
+}
+
+.language-selector button:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
 .language-selector .flag {
     width: 20px;
     height: 18px;
-    cursor: pointer;
-    margin-left: 0.5rem;
 }
 
 .section {
@@ -113,26 +125,15 @@ footer p {
     margin: 0;
 }
 
-/* === ESTILOS NOVOS PARA A IMAGEM REDONDA ===  */
 .about-image {
     width: 150px;
     height: 150px;
     border-radius: 50%; /* Torna a imagem redonda */
     object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
-    /*border: 3px solid #fff;  */
     position: absolute;
     top: 30px;
     right: 20px;
 }
-/*.about-image {
-    width: 150px;
-    height: 150px;
-   /* border-radius: 50%; 
-    object-fit: cover;
-    float: left; /* Imagem à esquerda 
-    margin-right: 20px; /* Espaço entre a imagem e o texto 
-    margin-top: 40px; /* Espaço acima da imagem 
-} */
 
 /* Ajuste para telas pequenas */
 @media (max-width: 768px) {

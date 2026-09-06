@@ -29,4 +29,13 @@ function changeLanguage(lang) {
 
 document.addEventListener('DOMContentLoaded', () => {
     changeLanguage('pt');
+
+    document.querySelectorAll('[data-lang]').forEach(button => {
+        button.addEventListener('click', () => changeLanguage(button.getAttribute('data-lang')));
+    });
+
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
 });

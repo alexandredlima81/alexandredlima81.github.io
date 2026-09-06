@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" href="images/home3.png">
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome para ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <header>
@@ -30,13 +30,13 @@
                     <li><a href="#formacoes" id="nav-education" data-translate="navEducation">Formações</a></li>
                     <li><a href="#certificacoes" id="nav-certifications" data-translate="navCertifications">Certificações</a></li>
                     <li><a href="#contato" id="nav-contact" data-translate="navContact">Contato</a></li>
-                    <li><a href="https://www.linkedin.com/in/alexandrefariaslima/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/in/alexandrefariaslima/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
                 </ul>
             </nav>
             <!-- Seleção de idioma por bandeiras -->
             <div class="language-selector">
-                <img src="images/brasil.png" alt="Português" class="flag" onclick="changeLanguage('pt')">
-                <img src="images/usa.png" alt="English" class="flag" onclick="changeLanguage('en')">
+                <button type="button" data-lang="pt" aria-label="Português"><img src="images/brasil.png" alt="" class="flag"></button>
+                <button type="button" data-lang="en" aria-label="English"><img src="images/usa.png" alt="" class="flag"></button>
             </div>
         </div>
     </header>
@@ -128,7 +128,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 <span id="footer-text" data-translate="footerText">Minha Página no GitHub</span></p>
+            <p>&copy; <span id="current-year">2026</span> <span id="footer-text" data-translate="footerText">Minha Página no GitHub</span></p>
         </div>
     </footer>
 
