@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Casos de Uso | Alexandre Lima</title>
+    <meta name="description" content="Casos de uso de Infraestrutura, AWS e DevOps por Alexandre Lima.">
+    <meta property="og:title" content="Casos de Uso | Alexandre Lima">
+    <meta property="og:description" content="Casos de uso de Infraestrutura, AWS e DevOps por Alexandre Lima.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alexandredlima81.github.io/casos-de-uso.html">
+    <meta property="og:image" content="https://alexandredlima81.github.io/images/eu.jpg">
+    <link rel="icon" type="image/png" href="images/home3.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="header-title">
+                <img src="images/home3.png" alt="Logo" class="header-logo">
+                <h1 id="page-title" data-translate="pageTitle">Bem-vindo amigos Terráqueos</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#sobre" id="nav-about" data-translate="navAbout">Sobre</a></li>
+                    <li><a href="casos-de-uso.html" id="nav-projects" data-translate="navProjects">Casos de Uso</a></li>
+                    <li><a href="index.html#formacoes" id="nav-education" data-translate="navEducation">Formações</a></li>
+                    <li><a href="index.html#certificacoes" id="nav-certifications" data-translate="navCertifications">Certificações</a></li>
+                    <li><a href="index.html#contato" id="nav-contact" data-translate="navContact">Contato</a></li>
+                    <li><a href="https://www.linkedin.com/in/alexandrefariaslima/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </nav>
+            <!-- Seleção de idioma por bandeiras -->
+            <div class="language-selector">
+                <img src="images/brasil.png" alt="Português" class="flag" onclick="changeLanguage('pt')">
+                <img src="images/usa.png" alt="English" class="flag" onclick="changeLanguage('en')">
+            </div>
+        </div>
+    </header>
+
+    <section id="projetos" class="section">
+        <div class="container">
+            <h2 id="projects-title" data-translate="projectsTitle">Casos de Uso</h2>
+            <div class="projetos-grid">
+                <div class="projeto-item">
+                    <h3 id="project1-title" data-translate="project1Title">Route 53 - Health Checks com Routing Policy - Failover para Registros do tipo A (Address Records)</h3>
+                    <p id="project1-description" data-translate="project1Description">Este caso de uso configura o Amazon Route 53 para garantir alta disponibilidade de serviços, utilizando health checks e políticas de roteamento para gerenciar failover entre múltiplos IPs associados a registros do tipo A. A estratégia envolve monitorar a saúde dos IPs e redirecionar o tráfego automaticamente para um IP secundário em caso de falha do IP primário, garantindo continuidade e resiliência para aplicações críticas.</p>
+                </div>
+                <div class="projeto-item">
+                    <h3 id="project2-title" data-translate="project2Title">EC2 - Restaurando o Serviço SSH via User Data</h3>
+                    <p id="project2-description" data-translate="project2Description">Em situações onde uma instância EC2 sofre uma interrupção regional e é reiniciada automaticamente pela AWS, podem ocorrer falhas na inicialização de serviços críticos, como o SSH. Para contornar esse problema, o recurso User Data pode ser utilizado para garantir que o serviço SSH seja restaurado corretamente durante o boot da instância. Ao incluir um script de inicialização no User Data, como service ssh start, é possível assegurar que o acesso via SSH seja reestabelecido após reinicializações forçadas, mantendo a instância acessível.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 <span id="footer-text" data-translate="footerText">Minha Página no GitHub</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
