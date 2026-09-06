@@ -38,4 +38,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
     }
+
+    const aboutImage = document.querySelector('.about-image');
+    const aboutSection = document.getElementById('sobre');
+    if (aboutImage && aboutSection && 'IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(([entry]) => {
+            const scrolledPast = !entry.isIntersecting && entry.boundingClientRect.top < 0;
+            aboutImage.classList.toggle('floating', scrolledPast);
+        });
+        observer.observe(aboutSection);
+    }
 });
